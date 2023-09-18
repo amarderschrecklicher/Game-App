@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Game</string>
+    <string name="search">Pretraga</string>
+    <string name="all_games">Sve igre</string>
+    <string name="details">Detalji</string>
+</resources>

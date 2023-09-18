@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/homeItem">
+
+    <fragment
+        android:id="@+id/homeItem"
+        android:name="ba.etf.rma23.projekat.HomeFragment"
+        android:tag="homeTag"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/homeToDetails"
+            app:destination="@id/gameDetailsItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameDetailsItem"
+        android:tag="detailTag"
+        android:name="ba.etf.rma23.projekat.GameDetailsFragment"
+        android:label="fragment_game_details"
+        tools:layout="@layout/fragment_game_details" >
+        <argument
+            android:name="game"
+            app:argType="string"
+            android:defaultValue="nogame" />
+        <action
+            android:id="@+id/detailsToHome"
+            app:destination="@id/homeItem" />
+        <action
+            android:id="@+id/detailsRefresh"
+            app:destination="@id/gameDetailsItem" />
+    </fragment>
+</navigation>

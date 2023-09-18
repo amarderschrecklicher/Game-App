@@ -1,0 +1,1 @@
+Ponekada se dešava da prije pokretanja testova, treba barem jedan element se nalaziti u bazi jer će baciti null exception pri pokretanju testova.

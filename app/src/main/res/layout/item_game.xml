@@ -1,0 +1,94 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#536DFE"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/game_rating_textview"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="100dp"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/cardView"
+            app:layout_constraintEnd_toStartOf="@id/item_title_textview"
+            app:layout_constraintTop_toTopOf="@id/cardView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gameLogo"
+                android:layout_width="151dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/item_title_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#01B9D1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/game_platform_textview"
+                app:layout_constraintStart_toEndOf="@id/game_rating_textview"
+                app:layout_constraintTop_toBottomOf="@id/item_title_textview"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/release_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="viewEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/game_rating_textview"
+                app:layout_constraintTop_toBottomOf="@id/release_date" />
+
+            <TextView
+                android:id="@+id/game_platform_textview"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="viewEnd"
+                android:textColor="#40C4FF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/release_date"
+                app:layout_constraintStart_toEndOf="@id/game_rating_textview" />
+
+            <Button
+                android:id="@+id/addFavButton"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B2FF59"
+                android:text="@string/add_to_fav"
+                android:textColor="#0B0A0A"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
