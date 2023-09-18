@@ -1,1 +1,2 @@
-Ponekada se dešava da prije pokretanja testova, treba barem jedan element se nalaziti u bazi jer će baciti null exception pri pokretanju testova.
+App that is built in Kotlin. It shows a list of games, that can be searched and added to favorites. 
+Every game when pressed shows a screen with the most important information about the game.
