@@ -1,2 +1,3 @@
-App that is built in Kotlin. It shows a list of games, that can be searched and added to favorites. 
-Every game when pressed shows a screen with the most important information about the game.
+App that is built in Kotlin. It shows a list of games, that can be searched (through the IGDB API) and added to favorites. 
+Every game when pressed shows a screen with the most important information about the game. In this view there can be seen comments about the game, which are imported from the IGDB API
+and those comments can be stored in a database.
